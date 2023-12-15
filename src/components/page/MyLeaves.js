@@ -10,6 +10,10 @@ export default function MyLeaves() {
         <SidePanel />
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
           <h3>My Leaves </h3>
+
+          <button className="button btnn-style"> ALL LEAVES </button>
+          <button className="button btnn-style"> PENDING </button>
+          <button className="button btnn-style"> HISTORY </button>
         </Box>
       </Box>
     </>

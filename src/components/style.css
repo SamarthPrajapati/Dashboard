@@ -3,3 +3,19 @@
   /* Set the desired color */
   font-size: 20px;
 }
+
+/* MyForm.css */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.form-container {
+  width: 800px; /* Adjust the width as needed */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}

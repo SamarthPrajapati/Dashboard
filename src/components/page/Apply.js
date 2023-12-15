@@ -2,6 +2,7 @@ import React from "react";
 import SidePanel from "../SidePanel";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import Form from "../Form";
 
 export default function Apply() {
   return (
@@ -10,6 +11,8 @@ export default function Apply() {
         <SidePanel />
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
           <h1>Apply</h1>
+
+          <Form />
         </Box>
       </Box>
     </>
