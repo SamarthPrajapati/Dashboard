@@ -11,9 +11,9 @@ export default function MyLeaves() {
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
           <h3>My Leaves </h3>
 
-          <button className="button btnn-style"> ALL LEAVES </button>
-          <button className="button btnn-style"> PENDING </button>
-          <button className="button btnn-style"> HISTORY </button>
+          <button className="button btnn-style btn-curved"> ALL LEAVES </button>
+          <button className="button btnn-style btn-curved"> PENDING </button>
+          <button className="button btnn-style btn-curved"> HISTORY </button>
         </Box>
       </Box>
     </>

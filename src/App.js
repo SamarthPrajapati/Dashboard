@@ -18,7 +18,7 @@ const App = () => {
       <nav className="navbar navbar-dark bg-light navbar-expand-sm">
         <div className="container">
           <a href="/" className="navbar-brand text-color">
-            Leaves
+            <span className="leave-text">Leave</span>
           </a>
           <a href="/" className="company-name">
             HashedIn

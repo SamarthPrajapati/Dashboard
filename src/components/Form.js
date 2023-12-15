@@ -1,8 +1,6 @@
 // Form.js
 import React, { useState } from "react";
 
-import "../components/style.css";
-
 const initialFormData = {
   leaveType: "",
   dateRange: "",
@@ -32,11 +30,12 @@ const Form = () => {
   };
 
   return (
-    <div className=" center-container">
+    <div className="center-container">
       <form onSubmit={handleSubmit} className="form-container">
-        <label>
-          Leave Type:
+        <div className="mb-3">
+          <label className="form-label">Leave Type:</label>
           <select
+            className="form-select"
             name="leaveType"
             value={formData.leaveType}
             onChange={handleChange}
@@ -46,45 +45,52 @@ const Form = () => {
             <option value="vacation">Vacation</option>
             <option value="personal">Personal Leave</option>
           </select>
-        </label>
-        <br />
+        </div>
 
-        <label>
-          Date Range:
+        <div className="mb-3">
+          <label className="form-label">Date Range:</label>
           <input
             type="date"
+            className="form-control"
             name="dateRange"
             value={formData.dateRange}
             onChange={handleChange}
           />
-        </label>
-        <br />
+        </div>
 
-        <label>
-          Manager:
+        <div className="mb-3">
+          <label className="form-label">Manager:</label>
           <input
             type="text"
+            className="form-control"
             name="manager"
             value={formData.manager}
             onChange={handleChange}
           />
-        </label>
-        <br />
+        </div>
 
-        <label>
-          Leave Reason:
+        <div className="mb-3">
+          <label className="form-label">Leave Reason:</label>
           <textarea
+            className="form-control"
             name="leaveReason"
             value={formData.leaveReason}
             onChange={handleChange}
           />
-        </label>
-        <br />
+        </div>
 
-        <button type="button" onClick={handleCancel}>
-          Cancel
-        </button>
-        <button type="submit">Apply</button>
+        <div className="d-flex justify-content-end mb-3">
+          <button
+            type="button"
+            className="btn btn-outline-dark me-2"
+            onClick={handleCancel}
+          >
+            Cancel
+          </button>
+          <button type="submit" className="btn btn-primary">
+            Apply
+          </button>
+        </div>
       </form>
     </div>
   );

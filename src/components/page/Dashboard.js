@@ -10,8 +10,8 @@ export default function Dashboard() {
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
           <h3>Dashboard </h3>
 
-          <button className="button btnn-style"> BALANCES </button>
-          <button className="button btnn-style2"> PENDING </button>
+          <button className="button btnn-style btn-curved"> BALANCES </button>
+          <button className="button btnn-style2 btn-curved"> PENDING </button>
 
           <div className="container m-3">
             <div className="row">

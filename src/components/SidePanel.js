@@ -73,7 +73,7 @@ export default function SidePanel() {
       <Drawer
         variant="permanent"
         open={open}
-        PaperProps={{ sx: { backgroundcolor: "rgba(225,249,27,1)" } }}
+        PaperProps={{ sx: { backgroundColor: "rgba(0, 0, 255, 0.7)" } }}
       >
         <DrawerHeader>
           {/* <IconButton onClick={handleDrawerClose}>
