@@ -32,9 +32,8 @@ const App = () => {
           <Route path="/myLeaves" exact element={<MyLeaves />}></Route>
           <Route path="/apply" exact element={<Apply />}></Route>
         </Routes>
+        <SidePanel />
       </BrowserRouter>
-
-      <SidePanel />
     </React.Fragment>
   );
 };

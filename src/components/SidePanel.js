@@ -64,7 +64,7 @@ const Drawer = styled(MuiDrawer, {
 export default function SidePanel() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -86,7 +86,13 @@ export default function SidePanel() {
         </DrawerHeader>
         <Divider />
         <List>
-          <ListItem disablePadding sx={{ display: "block" }}>
+          <ListItem
+            disablePadding
+            sx={{ display: "block" }}
+            onClick={() => {
+              navigate("/");
+            }}
+          >
             <ListItemButton
               sx={{
                 minHeight: 48,
@@ -112,7 +118,13 @@ export default function SidePanel() {
         </List>
 
         <List>
-          <ListItem disablePadding sx={{ display: "block" }}>
+          <ListItem
+            disablePadding
+            sx={{ display: "block" }}
+            onClick={() => {
+              navigate("/myLeaves");
+            }}
+          >
             <ListItemButton
               sx={{
                 minHeight: 48,
@@ -135,7 +147,13 @@ export default function SidePanel() {
         </List>
 
         <List>
-          <ListItem disablePadding sx={{ display: "block" }}>
+          <ListItem
+            disablePadding
+            sx={{ display: "block" }}
+            onClick={() => {
+              navigate("/apply");
+            }}
+          >
             <ListItemButton
               sx={{
                 minHeight: 48,
